@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Update Destination{% endblock %}
+{% block content %}
+<h1>Update Destination</h1>
+<form method="post" action="{% url 'update_dest' destination.id %}">
+    {% csrf_token %}
+    <label for="name">Destination Name:</label>
+    <input type="text" id="name" name="name" value="{{ destination.name }}" required>
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" required>{{ destination.description }}</textarea>
+    <button type="submit">Update</button>
+</form>
+{% endblock %}

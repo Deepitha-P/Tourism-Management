@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Track Order{% endblock %}
+{% block content %}
+<h1>Track Your Booking</h1>
+<form method="post" action="{% url 'track_order' %}">
+    {% csrf_token %}
+    <label for="order_id">Order ID:</label>
+    <input type="text" id="order_id" name="order_id" required>
+    <button type="submit">Track</button>
+</form>
+{% endblock %}

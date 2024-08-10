@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Manage Destinations{% endblock %}
+{% block content %}
+<h1>Manage Destinations</h1>
+<ul>
+    <li><a href="{% url 'add_dest' %}">Add Destination</a></li>
+    <li><a href="{% url 'update_dest' %}">Update Destination</a></li>
+    <li><a href="{% url 'remove_dest' %}">Remove Destination</a></li>
+</ul>
+{% endblock %}

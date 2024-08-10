@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Book Package{% endblock %}
+{% block content %}
+<h1>Book Package</h1>
+<form method="post" action="{% url 'place_order' destination.id %}">
+    {% csrf_token %}
+    <label for="package">Package:</label>
+    <input type="text" id="package" name="package" value="{{ destination.name }}" readonly>
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required>
+    <button type="submit">Confirm Booking</button>
+</form>
+{% endblock %}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt</title>
+</head>
+<body>
+    <h1>Payment Receipt</h1>
+    <p><strong>Booking ID:</strong> {{ booking.id }}</p>
+    <p><strong>User:</strong> {{ booking.user.username }}</p>
+    <p><strong>Package:</strong> {{ booking.package.name }}</p>
+    <p><strong>Price:</strong> ${{ booking.package.price }}</p>
+    <p><strong>Payment Method:</strong> {{ booking.payment_method }}</p>
+    <p><strong>Start Date:</strong> {{ booking.start_date }}</p>
+    <p><strong>End Date:</strong> {{ booking.end_date }}</p>
+    <p>Thank you for booking with us!</p>
+</body>
+</html>

@@ -1,0 +1,36 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.hero {
+    background: url("{% static 'images/hero-bg.jpg' %}") no-repeat center center;
+    background-size: cover;
+    color: white;
+}
+
+.card-title {
+    font-size: 1.5rem;
+}
+
+.card-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.footer {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

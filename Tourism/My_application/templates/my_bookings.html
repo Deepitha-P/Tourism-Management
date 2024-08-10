@@ -1,0 +1,23 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+<h2>My Bookings</h2>
+<ul>
+    {% for booking in bookings %}
+        <li>{{ booking.package.name }} on {{ booking.travel_date }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
+
+<style>
+    h2 {
+        margin-top: 0;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    ul li {
+        margin: 0.5em 0;
+    }
+</style>
